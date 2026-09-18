@@ -34,4 +34,22 @@ Permite:
 Para ejecutar el proyecto de forma local, primero se debe crear un entorno virtual:
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
+sudo apt install python3.14-venv
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+
+
+sudo apt install nodejs
+nodejs -v
+sudo apt install npm
+sudo npm install pm2@latest -g
+
+cd src
+pm2 list
+pm2 start "fastapi run"
